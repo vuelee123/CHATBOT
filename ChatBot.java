@@ -28,7 +28,7 @@ public class ChatBot {
         System.out.println("Can I guess how old you are?");
         System.out.println("Enter any number from 1 -10");
 
-        int num = Integer.valueOf(scan.nextLine());
+        int num = Integer.parseInt(scan.nextLine());
         int number = ((num * 2) + 5)* 50;
         System.out.println(number);
 
@@ -39,14 +39,14 @@ public class ChatBot {
             int age = number + 1772;
             System.out.println(age);
             System.out.println("What year were you born?");
-            int birthYear= Integer.valueOf(scan.nextLine());
+            int birthYear= Integer.parseInt(scan.nextLine());
             int correctAge= Integer.valueOf((age-birthYear)% 100);
             System.out.println("You are " + correctAge);
         }else{
             int age = number + 1772;
             System.out.println(age);
             System.out.println("What year were you born?");
-            int birthYear= Integer.valueOf(scan.nextLine());
+            int birthYear= Integer.parseInt(scan.nextLine());
             int correctAge= Integer.valueOf((age-birthYear)% 100);
             System.out.println("You are " + correctAge + ".");
         }
@@ -58,7 +58,6 @@ public class ChatBot {
         }else{
             System.out.println("Oh darn!");
         }
-
     }
     public static void countNumber(){
         Scanner scan = new Scanner(System.in);
